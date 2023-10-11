@@ -1,0 +1,13 @@
+@mixin gradient-img($color-bg: rgba(0,0,0,1), $height: 400px, $bg: './beach-bg.png') {
+    background-image: linear-gradient(to left, $color-bg, rgba(0,0,0,0)), url($bg);
+    background-size:cover;
+    height: $height - 2*$padd;
+
+    .row {
+        height: 350px;
+    }
+
+    img {
+        height: 250px;
+    }
+}

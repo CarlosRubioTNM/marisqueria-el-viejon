@@ -1,18 +1,13 @@
-$padd: 5px;
-$primary-color: rgb(100,200,350);
+@import './variables.scss';
+@import './mixins.scss';
+
 
 .gradbg {
-    background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url('./beach-bg.png');
-    background-size:cover;
-    height: 400px - 2*$padd;
+    @include gradient-img();
+}
 
-    .row {
-        height: 350px;
-    }
-
-    img {
-        height: 300px;
-    }
+.sections {
+    @include gradient-img(rgba(80,120,15,1), 500px, './restaurant.jpg');
 }
 
 .row p {

@@ -7,7 +7,19 @@
   height: 350px;
 }
 .gradbg img {
-  height: 300px;
+  height: 250px;
+}
+
+.sections {
+  background-image: linear-gradient(to left, rgb(80, 120, 15), rgba(0, 0, 0, 0)), url("./restaurant.jpg");
+  background-size: cover;
+  height: 490px;
+}
+.sections .row {
+  height: 350px;
+}
+.sections img {
+  height: 250px;
 }
 
 .row p {
